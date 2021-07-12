@@ -10,6 +10,7 @@
     </parent>
     <groupId>com.adamhuang</groupId>
     <artifactId>mydemo</artifactId>
+    <packaging>jar</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>mydemo</name>
     <description>Demo project for Spring Boot</description>
@@ -48,6 +49,16 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <skip>true</skip>
+                </configuration>
+            </plugin>
+            <!-- 这里需要给出JDK的具体地址： -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <fork>true</fork>
+                    <executable>/usr/local/jdk1.8.0_171/bin/javac</executable>
                 </configuration>
             </plugin>
         </plugins>
