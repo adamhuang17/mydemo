@@ -6,6 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
     @RequestMapping("/hello")
     public String Hello(){
-        return "Hello World！爷是爱因不喝咖啡";
+        return "Hello World！我是黄嘉骏";
     }
 }
